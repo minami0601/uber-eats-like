@@ -1,3 +1,4 @@
+# --- ここから追加 ---
 class Restaurant < ApplicationRecord
   has_many :foods
   has_many :line_foods, through: :foods
@@ -7,3 +8,4 @@ class Restaurant < ApplicationRecord
   validates :name, length: { maximum: 30 }
   validates :fee, numericality: { greater_than: 0 }
 end
+# --- ここまで追加 ---

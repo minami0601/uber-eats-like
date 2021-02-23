@@ -59,7 +59,7 @@ const RestaurantsContentsList = styled.div`
 const RestaurantsContentWrapper = styled.div`
   width: 450px;
   height: 300px;
-  padding: 48px 0;
+  padding: 48px;
 `;
 
 const RestaurantsImageNode = styled.img`

@@ -1,13 +1,10 @@
 import React, { Fragment, useReducer, useEffect } from 'react';
 import styled from 'styled-components';
-// --- ここから追加 ---
-import { Link } from "react-router-dom";
-// --- ここまで追加 ---
 
-// --- ここから追加 ---
-// components
+import { Link } from "react-router-dom";
+
 import Skeleton from '@material-ui/lab/Skeleton';
-// --- ここまで追加 ---
+
 
 // apis
 import { fetchRestaurants } from '../apis/restaurants';
@@ -19,17 +16,13 @@ import {
   restaurantsReducer,
 } from '../reducers/restaurants';
 
-// --- ここから追加 ---
 // constants
 import { REQUEST_STATE } from '../constants';
-// --- ここまで追加 ---
 
 // images
 import MainLogo from '../images/logo.png';
 import MainCoverImage from '../images/main-cover-image.png';
-// --- ここから追加 ---
 import RestaurantImage from '../images/restaurant-image.jpg';
-// --- ここまで追加 ---
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -49,7 +42,6 @@ const MainCover = styled.img`
   height: 600px;
 `;
 
-// --- ここから追加 ---
 const RestaurantsContentsList = styled.div`
   display: flex;
   justify-content: space-around;
@@ -60,6 +52,7 @@ const RestaurantsContentWrapper = styled.div`
   width: 450px;
   height: 300px;
   padding: 48px;
+  box-sizing: border-box;
 `;
 
 const RestaurantsImageNode = styled.img`
@@ -75,7 +68,6 @@ const SubText = styled.p`
   color: black;
   font-size: 12px;
 `;
-// --- ここまで追加 ---
 
 export const Restaurants = () => {
   const [state, dispatch] = useReducer(restaurantsReducer, initialState);

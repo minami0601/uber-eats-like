@@ -28,3 +28,12 @@ export const replaceLineFoods = (params) => {
   .catch((e) => { throw e; })
 };
 // --- ここまで追加 ---
+// --- ここから追加 ---
+export const fetchLineFoods = () => {
+  return axios.get(lineFoods)
+  .then(res => {
+    return res.data
+  })
+  .catch((e) => { throw e; })
+};
+// --- ここまで追加 ---

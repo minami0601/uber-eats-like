@@ -49,7 +49,7 @@ const RestaurantsContentsList = styled.div`
 `;
 
 const RestaurantsContentWrapper = styled.div`
-  width: 450px;
+  width: 440px;
   height: 300px;
   padding: 48px;
   box-sizing: border-box;
